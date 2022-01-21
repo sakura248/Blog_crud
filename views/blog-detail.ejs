@@ -1,0 +1,49 @@
+<%- include('./includes/head.ejs') %>
+<body>
+  <%- include('./includes/nav.ejs') %>
+  <div class="container">
+    <h1><%= blog.title %></h1>
+    <div class="content-container">
+      <p><%= blog.content %></p>
+    </div>
+    <div class="like-dislike-container">
+
+      <form action="/count-like" method="post">
+        <input type="hidden" name="blogId" value="<%= blog.id %>" />
+        <button type="submit"><i class="far fa-thumbs-up"></i></button>
+        <p>
+          <%= blog.like %>
+        </p>
+      </form>
+
+      <form action="/count-dislike" method="post">
+        <input type="hidden" name="blogId" value="<%= blog.id %>" />
+        <button type="submit"><i class="far fa-thumbs-down"></i></button>
+        <p>
+          <%= blog.dislike %>
+        </p>
+      </form>
+
+    </div>
+
+
+    
+    <div class="comment-container">
+    <h3>Comments（<%= comments.length %>） </h3>
+    <div class="comment-bontainer">
+      <% for(let i = 0 ; i < comments.length ; i++ ) { %>
+        <div class="comment-block">
+          <i class="far fa-comment"></i>
+          <p class="comment-card"><%= comments[i].commentText %></p>
+        </div>
+      <% } %>
+    </div>
+      <form action="/add-comment" method="post">
+        <input type="hidden" name="blogId" value="<%= blog.id %>" />
+        <textarea placeholder="write some comment" name="commentText"></textarea>
+        <button  type="submit" class="primary-button">Submit</button>
+      </form>
+    </div>
+  
+</body>
+</html>

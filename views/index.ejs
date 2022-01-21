@@ -1,0 +1,44 @@
+<%- include('./includes/head.ejs') %>
+<body>
+  <%- include('./includes/nav.ejs') %>
+  <div class="container">
+
+    <h1><%= pageTitle %></h1>
+      <hr />
+      <ul class="blog-list-ul">
+        <% for(let i = 0 ; i < blogs.length ; i++ ) { %>
+          <li class="blog-card">
+              <h3 class="list-title"><%= blogs[i].title %></h3>
+              <!-- <p><%= blogs[i].content %></p> -->
+              <p class="list-content">
+                <% if(blogs[i].content.length >= 100) { %>
+                    <%= blogs[i].content.slice(0, 100).concat('...') %>
+                <% }else{ %>
+                    <%= blogs[i].content %>
+                <% } %>
+  
+              </p>
+              <div class="buttons">
+                <a class="readmore-btn" href="/blogs/<%= blogs[i]._id %>">Read more</a>
+                <div class="icon-button-container">
+                  <a href="/edit-blog/<%= blogs[i]._id %>">
+                    <i class="far fa-edit"></i>
+                  </a>
+                  <form action="/delete-blog" method="POST">
+                    <input type="hidden" value="<%= blogs[i]._id %>" name="blogId" />
+                    <button type="submit">
+                      <i class="far fa-trash-alt"></i>
+                    </button>
+                  </form>
+
+              </div>
+              </div>
+          </li>
+        <% } %>
+  
+      </ul>
+  </div>
+
+  <script src="/main.js"></script>
+</body>
+</html>

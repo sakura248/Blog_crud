@@ -1,0 +1,43 @@
+
+▽DONE - - - - - - - - - - - - - - - - 
+- modify dotenv
+- shared header, footer
+- change into mongoose
+- controller修正★いまここ
+- routeの設定★いまここ
+- server見直す★いまここ
+
+- 編集機能実装
+- 削除機能実装
+▽DOING - - - - - - - - - - - - - - - - 
+- コメント機能といいね機能作成
+- 詳細にコメント欄追加
+- コメント用クラスター作成＆紐付
+
+▽TODO - - - - - - - - - - - - - - - - 
+❗今後マスト
+- dotenv
+
+
+- 詳細ページに編集・削除ボタン追加
+
+⭐できればやりたい
+- image用にスキーマ編集
+- image のドロップ対応
+- 投稿時間表示
+
+
+
+
+
+
+
+      <% for(let i = 0 ; i < comments.length ; i++ ) { %>
+        <div class="comment-block">
+          <p><%= comments[i].comment %></p>
+        </div>
+      <% } %>
+
+
+素材
+iconmonstr.com

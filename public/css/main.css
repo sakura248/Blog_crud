@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Ubuntu;
+  color: #252422;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.list-title {
+  font-size: 2rem;
+}
+
+.list-content {
+  font-size: 1.1rem;
+  color: #686868
+}
+
+
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #8338ec;
+  height: 80px;
+}
+
+nav a {
+  font-size: 1.25rem;
+  margin: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.blog-form {
+  /* width: 80%; */
+  margin: 0 auto;
+}
+
+.blog-form label {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+input[type="text"] {
+  font-size: 1.1rem;
+  padding: 0.25rem 0.5rem;
+  width: 100%;
+  border: 1px solid #ccc5b9;
+}
+
+input {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  border: 1px solid #ccc5b9;
+  padding: 0.25rem 0.5rem; 
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.primary-button {
+  background-color: #fff;
+  color:#eb5e28;
+  border: 1px solid #eb5e28;
+  border-radius: 9999px;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto;
+  display: block;
+}
+
+.primary-button:hover {
+  background-color: #eb5e28;
+  color: #fff;
+
+}
+
+textarea {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.blog-list-ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.blog-list-ul li {
+
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 20px 0px #979797; 
+  box-shadow: 5px 5px 20px 0px #979797;
+  padding: 2rem
+}
+
+.blog-card h3 {
+  margin: 0
+}
+
+
+.icon-button-container {
+  display: flex;
+  width: 110px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.icon-button-container a:first-child {
+  margin-right: 15px;
+}
+
+.icon-button-container button {
+  background: none;
+  border: none;
+}
+
+.icon-button-container i {
+  font-size: 1.25rem;
+  color: #ccc5b9;
+  cursor: pointer;
+}
+
+.icon-button-container i:hover {
+  color: #403d39
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.readmore-btn {
+  background-color: #fff;
+  color:#8338ec;
+  border: 1px solid #8338ec;
+  border-radius: 9999px;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+}
+
+
+.readmore-btn:hover {
+  background-color: #8338ec;
+  color: #fff;
+}
+
+
+/* DETAIL */
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.content-container p {
+  line-height: 1.75rem;
+}
+
+.like-dislike-container {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.like-dislike-container button {
+  background: none;
+  border: none;
+}
+
+.like-dislike-container i {
+  font-size: 1.25rem;
+  color: #252422;
+  cursor: pointer;
+}
+
+.like-dislike-container i:hover {
+  color: #ffbe0b
+}
+
+.like-dislike-container p {
+  margin-right: 10px;
+  display: inline-block;
+
+}
+
+.comment-container textarea{
+  height: 120px;
+}
+
+.comment-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.comment-block p {
+  margin: 0;
+}
+
+.comment-block i {
+  margin-right: 20px;
+  font-size: 1.3rem;
+}
+
+
+.comment-button {
+
+}
