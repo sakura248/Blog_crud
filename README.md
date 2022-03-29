@@ -1,6 +1,6 @@
 # BLOG CRUD APP
 
-[Blog Image](/assets/images/blog_all.png)
+![Blog Image](/assets/images/blog_all.png)
 
 ## Description
 
@@ -21,6 +21,6 @@ I made this blog crud app to practice and learn MERN stack
 - Adding comments
 - Like button and dislike button
 
-[Posting log Image](/assets/images/blog_post.png)
-[Posting log Image](/assets/images/blog_read.png)
-[Posting log Image](/assets/images/blog_edit.png)
+![Posting blog Image](/assets/images/blog_post.png)
+![Posting log Image](/assets/images/blog_read.png)
+![Posting log Image](/assets/images/blog_edit.png)
